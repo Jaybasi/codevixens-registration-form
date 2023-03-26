@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+      <h3>Register For Codevixens Band 4 Training</h3>
+      <form action="form.html" method="post">
+        <fieldset>
+          <label for="first-name">
+            <input type="text" id="first-name" name="FN" placeholder="First Name" required="">
+          </label>
+          <label for="last-name">
+            <input type="text" id="last-name" name="LN" placeholder="Last Name" required="">
+          </label>
+          <label for="email" class="block">
+            <input type="email" id="email" name="email" placeholder="Email Address" required="">
+          </label>
+          <label for="phone" class="block">
+            <input type="tel" id="phone" name="FN" placeholder="Phone Number" required="">
+          </label>
+          <label for="country" class="block">
+            <input type="text" id="country" name="country" placeholder="Country" required="">
+          </label>
+        </fieldset>
+        <fieldset>
+      
+          <label for="male">male
+            <input type="radio" id="male" name="gender" value="male">
+          </label>
+         <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </fieldset>
+        <fieldset>
+          <label for="yourself">
+            <textarea placeholder="Tell us about yourself" id="yourself" name="yourself" rows="4" cols="50">
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit Details">
+      </form>
+    </main>
+  </body>
+</html>
